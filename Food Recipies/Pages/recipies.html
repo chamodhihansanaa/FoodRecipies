@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Recipies</title>
+    <style>
+        body {
+         background-color: gray; 
+
+
+        /* background: linear-gradient(to top, red, yellow);
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+
+        background-image: url("/assets/images/yellow-flowers.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color:black;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 12px;
+      }
+      .product-card {
+        padding: 16px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .product-card:hover {
+        box-shadow: 8px 8px 8px gray;
+      }
+
+      .btn-buy-now {
+        padding: 8px 16px;
+        background-color: blue;
+        color: white;
+        border-radius: 12px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      .btn-add-to-cart {
+        padding: 8px 16px;
+        background-color: black;
+        color: white;
+        border-radius: 12px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      .product-details {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .product-image {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 8px;
+      }
+
+      .product-description {
+        height: 25px;
+        overflow-y: scroll;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 575px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        h1 {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        .container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+      div{
+         justify-content: center;
+         display: flex;
+      align-items: center;
+        flex-wrap: wrap;
+        /* border-radius: 50px; */
+   }
+   .box{
+    width: 100%;
+    height: 25%;
+    background-color:burlywood;
+   }
+   .social-icons{
+    background-color:lightseagreen;
+
+   }
+   .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+      .logo-container {
+        display: flex;
+        align-items:safe;
+      }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+          <div class="box">
+            <div class="logo-container">
+              <img class="logo" src="/images.html/WhatsApp Image 2024-10-27 at 12.40.39.jpeg" alt="logo" />
+              <h1>Restuarent Lover</h1>
+              </div>
+          <div>
+            <ul>
+                <a href="/Pages/home.html"target="_black">HOME</a>
+                
+                <a href="/Pages/about.html"target="_black">ABOUT</a>
+                
+                <a href="/Pages/recipies.html"target="_black">RECIPI</a>
+                
+                <a href="/Pages/cookbook.html"target="_black">COOKBOOK</a>
+                
+                <a href="/Pages/contact.html"target="_black">CONTACT</a>
+            
+                <a href="/Pages/shop.html"target="_black">SHOP</a>
+                
+  
+  
+  
+            </ul>
+            </div>
+           </div>
+         </nav>
+       </header>
+
+    <h1>Restuarent Lover</h1>
+    <br>
+
+    <label for="search">Search Recipies Titles :</label>
+    <input type="text" placeholder="Search Recipies" maxlength="10"/>
+    <br/>
+    <h1>MENU BAR</h1>
+    <div class="container">
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Breakfast.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Breakfast</h3>
+          </div>
+        <div class="product-description">
+          </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Lunch.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Lunch</h3>
+        </div>
+        <div class="product-description">
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Dinner.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Dinner</h3>
+         </div>
+        <div class="product-description">
+        </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Sodas.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Soda & Juice</h3>
+          </div>
+        <div class="product-description">
+          </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Strawberry Milk.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Strawberry Milk</h3>
+        </div>
+        <div class="product-description">
+          </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Brownie MilkShake.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Brownie MilkShake</h3>
+         </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Black Coffe.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Black Coffe</h3>
+      </div>
+        <div class="product-description"> </div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Chocolote Sheet Cake.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Chocolote Sheet Cake</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Flan De Queso.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Flan De Queso</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Cocoa Milkshack.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Cocoa MilkShack</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Avocado.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Avocado</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Fruit Salad.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Fruit Salad</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Beans.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Beans</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Donet.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Donet</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Hamburger.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Berger</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Dahi Puri.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Poori</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Crisp Corn Cheese Balls.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Crisp Corn Cheese Balls</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Idli .jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Idli</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Chicken Curry.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Chicken Curry</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Homemade Pepperoni Pizza.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Homemade Pepperoni Pizza</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Cheese Pizza.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Cheese Pizza</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Taco Pasta.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Taco Pasta</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Shawarma.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Shawrma</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Nigerian Fried Rice.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Nigerian Fried Rice</h3>
+          </div>
+          <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Crispy Spicy Buttermilk Frid Chicken.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Crispy Spicy Buttermilk Frid Chicken</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Genaral Tsos Chicken.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Tsos Chicken</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Hawaiian Chicken Kabobs.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Hawaiian Chicken Kabobs</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Bandeja Paisa.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Bendeja Paisa</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Cheese Dakgalbi.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Cheese Dakgalbi</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+      <var> <div class="product-card">
+        <img
+          class="product-image"
+          src="/images.html/Chicken Chow.jpeg"
+          alt=""
+        />
+        <div class="product-details">
+          <h3>Chicken Chow</h3>
+        </div>
+        <div class="product-description"></div>
+        <button class="btn-buy-now">Buy Now</button>
+        <button class="btn-add-to-cart">Add To Cart</button>
+      </div></var>
+    
+
+    </div>
+    <h2>Filter Recipes:</h2>
+       <p><i> Check multiple boxes below to narrow recipe search results:</i> </p>
+       <ul>
+       <h3>MEAL TYPE:</h3>
+       <br>
+   <label for="breakfast">breakfast</label>
+   <input type="radio"name="MEAL TYPE" />
+
+   <label for="lunch">lunch </label>
+   <input type="radio"name="MEAL TYPE" />
+
+   <label for="dinner">dinner</label>
+   <input type="radio"name="MEAL TYPE" />
+
+   <label for="appetizers">appetizers</label>
+   <input type="radio"name="MEAL TYPE" />
+
+   <label for="soups">soups</label>
+   <input type="radio"name="MEAL TYPE" />
+
+   <label for="salads">salads</label>
+   <input type="radio"name="MEAL TYPE" />
+
+   <label for="pasta">pasta</label>
+   <input type="radio"name="MEAL TYPE" />
+        
+   <label for="side dishes">side dishes</label>
+   <input type="radio"name="MEAL TYPE" /> 
+        
+   <label for="desserts">desserts</label>
+   <input type="radio"name="MEAL TYPE" />
+   </br>
+
+        <h3>MORE RECIPIES:</h3>
+        <br>
+        <label for="favorites">favorites</label>
+        <input type="radio"name="MORE RECIPIES" />
+          
+        <label for="cooking basics">cooking basics</label>
+        <input type="radio"name="MORE RECIPIES" />
+         
+        <label for="snacks& dips">snacks& dips</label>
+        <input type="radio"name="MORE RECIPIES" />
+
+        <label for="dressings & sauces">dressings & sauces</label>
+        <input type="radio"name="MORE RECIPIES" /></li>
+          
+        <label for="baking">baking</label>
+        <input type="radio"name="MORE RECIPIES" /></li>
+        </br>
+
+
+        <h3>SPECIAL DIET:</h3>
+        <br>
+        <label for="vegan">vegan</label>
+        <input type="radio"name="MORE RECIPIES" />
+
+        <label for="vegetarian">vegetarian</label>
+        <input type="radio"name="MORE RECIPIES" />
+
+        <label for="dairy free">dairy free</label>
+        <input type="radio"name="MORE RECIPIES" />
+
+        <label for="gluten free ">gluten free </label>
+        <input type="radio"name="MORE RECIPIES" />
+        </Br>
+            
+            
+           
+
+
+        <h3>BY SEASON:</h3>
+        <br>
+        <label for="fall ">fall </label>
+        <input type="radio"name="MORE RECIPIES" />
+
+        <label for="winter ">winter</label>
+        <input type="radio"name="MORE RECIPIES" />
+
+        <label for="spring ">spring </label>
+        <input type="radio"name="MORE RECIPIES" />
+
+        <label for="summer ">summer </label>
+        <input type="radio"name="MORE RECIPIES" />
+    </br>
+            
+
+        <h3>BY INGREDIENT:</h3>
+
+            <li>apples</li>
+            <li>artichokes </li>
+            <li>asparagus </li>
+            <li>avocado </li>
+            <li>banana </li>
+            <li>beets</li>
+            <li>berries </li>
+            <li>broccoli</li>
+            <li>brussels sprouts </li>
+            <li>cabbage </li>
+            <li>carrots </li>
+            <li>cauliflower </li>
+            <li>cherries </li>
+            <li>chiles </li>
+            <li>citrus </li>
+            <li>corn </li>
+            <li>cucumber </li>
+            <li>eggplant </li>
+            <li>fennel </li>
+            <li>figs </li>
+            <li>greens </li>
+            <li>herbs </li>
+            <li> kale </li>
+            <li> mango </li>
+            <li> mushrooms </li>
+            <li>parsnips </li>
+            <li>peaches </li>
+            <li>pears </li>
+            <li>peas </li>
+            <li> peppers </li>
+            <li>pineapple </li>
+            <li>pomegranate </li>
+            <li>potatoes </li>
+            <li>pumpkin </li>
+            <li>radishes </li>
+            <li>summer squash </li>
+            <li>sweet potatoes </li>
+            <li>tomatillos</li>
+            <li>tomatoes</li>
+            <li>watermelon </li>
+            <li>winter squash </li>
+            <li>zucchini</li>
+            
+       </ul>
+       <br>
+<!-- Footer Section -->
+<footer>
+  <div class="social-icons">
+    <a href="#"><img src="/images.html/icons8-facebook-48(1).png" alt="Facebook" /></a>
+    <a href="#"><img src="/images.html/icons8-instagram.gif" alt="Instragram" /></a>
+    <a href="#"><img src="/images.html/icons8-calling-48.png" alt="Phone" /></a>
+  
+  <p>&copy; 2024 Restuarent Lover Flavorful  || Simple Recipes Made For Everyday Life</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

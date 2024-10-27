@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+       body {
+         background-color: gray; 
+
+
+        /* background: linear-gradient(to top, red, yellow);
+        background-repeat: no-repeat;
+        background-attachment: fixed; */
+
+        /* background-image: url("/assets/images/yellow-flowers.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color:black; */
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 12px;
+      }
+      .product-card {
+        padding: 16px;
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .product-card:hover {
+        box-shadow: 8px 8px 8px gray;
+      }
+
+      .btn-buy-now {
+        padding: 8px 16px;
+        background-color: blue;
+        color: white;
+        border-radius: 12px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      .btn-add-to-cart {
+        padding: 8px 16px;
+        background-color: black;
+        color: white;
+        border-radius: 12px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      .product-details {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .product-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 8px;
+        justify-content: center;
+      }
+
+      .product-description {
+        height: 25px;
+        overflow-y: scroll;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 575px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        h1 {
+          display: none;
+        }
+      }
+
+      @media screen and (min-width: 576px) and (max-width: 767px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1199px) {
+        .container {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media screen and (min-width: 1200px) and (max-width: 1399px) {
+        .container {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+      div{
+         justify-content: center;
+         display: flex;
+      align-items: center;
+        flex-wrap: wrap;
+        /* border-radius: 50px; */
+   }
+   .box{
+    width: 100%;
+    height: 25%;
+    background-color:burlywood;
+   }
+   .social-icons{
+    background-color:lightseagreen;
+    width: 100%;
+    height: 50%;
+
+   }
+   .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+      .logo-container {
+        display: flex;
+        align-items:safe;
+      }
+
+      /* div{
+         justify-content: center;
+         display: flex;
+      align-items: center;
+        flex-wrap: wrap;
+        border-radius: 50px;
+   }
+   .box{
+    width: 100%;
+    height: 25%;
+    background-color:burlywood;
+   } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="box">
+            <div class="logo-container">
+              <img class="logo" src="/images.html/WhatsApp Image 2024-10-27 at 12.40.39.jpeg" alt="logo" />
+              <h1>Restuarent Lover</h1>
+              </div>
+          <div>
+            <ul>
+                <a href="/Pages/home.html"target="_black">HOME</a>
+                
+                <a href="/Pages/about.html"target="_black">ABOUT</a>
+                
+                <a href="/Pages/recipies.html"target="_black">RECIPI</a>
+                
+                <a href="/Pages/cookbook.html"target="_black">COOKBOOK</a>
+                
+                <a href="/Pages/contact.html"target="_black">CONTACT</a>
+            
+                <a href="/Pages/shop.html"target="_black">SHOP</a>
+                
+  
+  
+  
+            </ul>
+            </div>
+           </div>
+         </nav>
+       </header>
+   <h1>Restuarent Lover</h1> 
+   <br>
+   
+   <img
+   src="/images.html/WhatsApp Image 2024-08-22 at 11.31.12.jpeg"
+  style="width: 1240px; height: 500px; object-fit: cover;"
+   alt=""/>
+   <br>
+<br>
+<br>
+   <label for="search">Search Items Titles :</label>
+   <input type="text" placeholder="Search Items" maxlength="20"/>
+   <br/>
+   <br>
+   <br>
+   <br>
+   <div class="container">
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.43.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Oval Dutch Ovens</h3>
+        </div>
+      <div class="product-description">
+        </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.51(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Vegetable Cutter</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.51(2).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Making The Pancakes</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div> 
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.51.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Chinese Cooking Tools</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.52(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Food Containers</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.53(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Grap Cutter</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.53(2).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Toster</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.53.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Olivewood Rolling Pin</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.54(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Enamel Milk Pot/Wooden Handle</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.54.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Vegetable Grater & Slicer</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.55(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Vegetable & Food Chopper</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.55.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Multifunktionaler</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.56(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Other things</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.56.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Egg Cutter</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.57(2).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Blender</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.57(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Three Layer Fruit Plate</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.57.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Kichen Storage</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.58(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>SiliconeBaking Spatula</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.58.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Stand Mixer Guide</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 11.51.52.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Oil Spre Bottle</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.28.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Stew Pot</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.24(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Food Preparation Set</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.24.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Grapefruit & Lemon Press Juicing</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.23(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Sweetheart Waffler</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.23.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Oven</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.22(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Cutting Board</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.22.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>12 Cup Egg Holder</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.21(1).jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Serviat</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.21.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Burner Countertop Electric Grill Gray</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <div class="product-card">
+      <img
+        class="product-image"
+        src="/images.html/Shop/WhatsApp Image 2024-10-25 at 14.22.20.jpeg"
+        alt=""
+      />
+      <div class="product-details">
+        <h3>Steel Dish Rack</h3>
+      </div>
+      <div class="product-description">
+      </div>
+      <button class="btn-buy-now">Buy Now</button>
+      <button class="btn-add-to-cart">Add To Cart</button>
+    </div>
+    <br>
+<!-- Footer Section -->
+<footer>
+  <div class="social-icons">
+    <a href="#"><img src="/images.html/icons8-facebook-48(1).png" alt="Facebook" /></a>
+    <a href="#"><img src="/images.html/icons8-instagram.gif" alt="Instragram" /></a>
+    <a href="#"><img src="/images.html/icons8-calling-48.png" alt="Phone" /></a>
+  
+  <p>&copy; 2024 Restuarent Lover Flavorful  || Simple Recipes Made For Everyday Life</p>
+  </div>
+</footer>
+
+
+
+    <!-- <br>
+   <label for="Essentials ">Essentials </label>
+   <input type="radio"name="" />
+   <br>
+   <label for="Cookware">Cookware</label>
+   <input type="radio"name="" />
+   <br>
+   <label for="Kitchen Tools">Kitchen Tools</label>
+   <input type="radio"name="" />
+   <br>
+   <label for="Prep/Storage">Prep/Storage</label>
+   <input type="radio"name="" />
+   <br>
+   <label for="Tabletop">Tabletop</label>
+   <input type="radio"name="" />
+   <br>
+   <label for="Photography">Photography</label>
+   <input type="radio"name="" />
+
+   <br>
+   <br> -->
+
+   
+</body>
+</html>
